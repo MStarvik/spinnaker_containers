@@ -1,4 +1,5 @@
-FROM ubuntu:20.04
+# FROM ubuntu:20.04
+FROM ros:noetic
 
 ARG TARGETARCH
 ARG SPINNAKER_VERSION=4.2.0.21
