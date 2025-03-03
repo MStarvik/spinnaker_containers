@@ -1,8 +1,8 @@
-# FROM ubuntu:20.04
-FROM ros:noetic
+ARG BASE_IMAGE
+FROM $BASE_IMAGE
 
 ARG TARGETARCH
-ARG SPINNAKER_VERSION=4.2.0.21
+ARG SPINNAKER_VERSION
 
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
@@ -16,6 +16,7 @@ RUN apt-get update && \
         libusb-1.0-0 \
         lsb-release \
         qt5-default \
+        qtwayland5 \
         wget && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
