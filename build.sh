@@ -1,6 +1,6 @@
 #/bin/sh
 DOCKER_EXEC=podman
-SPINNAKER_VERSION=4.2.0.21
+SPINNAKER_VERSION=4.2.0.46
 
 # DISTRO=focal
 # BASE_IMAGE=docker.io/library/ubuntu:$DISTRO
